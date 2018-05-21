@@ -1,0 +1,14 @@
+# depslib dependency file v1.0
+1526909520 source:d:\c and c++\assignment_4\main.c
+	<stdio.h>
+	<stdlib.h>
+	"Tree.h"
+
+1526908407 d:\c and c++\assignment_4\tree.h
+
+1526909604 source:d:\c and c++\assignment_4\tree.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"Tree.h"
+
