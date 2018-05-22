@@ -1,24 +1,3 @@
-/*
-#include <stdio.h>
-#include <stdlib.h>
-#include "Tree.h"
-
-int main()
-{
-    Tree_node* root = malloc(sizeof(Tree_node));
-    construct_node(root, "a");
-    insert(root, "an");
-    insert(root, "bbfb");
-    insert(root, "moo");
-    insert(root, "bar");
-
-
-    // print inoder traversal of the BST
-    inorder(root);
-    return 0;
-}
-*/
-
 // C program to insert a node in AVL tree
 #include <stdio.h>
 #include <stdlib.h>
@@ -202,13 +181,17 @@ struct Node* search(struct Node* root, char key[])
        return root;
 
     // Key is greater than root's key
-    if (strcmp(key, root->key) > 0)
-       return search(root->right, key);
-
+    if (strcmp(key, root->key) > 0) {
+       last_leaf = search(root->right, key);
+       if(last_leaf == NULL)
+            return root->right;
+    }
     // Key is smaller than root's key
-    last_leaf = search(root->left, key);
-    if(last_leaf == NULL)
-        return root->left;
+    else {
+        last_leaf = search(root->left, key);
+        if(last_leaf == NULL)
+            return root->left;
+    }
     return last_leaf;
 }
 
@@ -222,7 +205,7 @@ void find_p_s(struct Node* root, char key[], struct Node** p, struct Node** q)
     find_p_s(root->left, key, p, q);
 
     // root data is greater than a
-    if(root&& strcmp(key, root->key) < 0)
+    if(root && strcmp(key, root->key) < 0)
     {
 
         // q stores the node whose data is greater
