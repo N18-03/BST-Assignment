@@ -231,11 +231,18 @@ int main()
 {
     struct Node *root = NULL;
     root = loadDictionary("English Dictionary.txt", root);
+    printf("height = %d\n\n", height(root));
 
     while(1){
         char key[20];
+        int i;
         printf("enter search word : ");
         scanf("%s",key);
+
+        //convert each character to lowercase.
+        for(i = 0; key[i]; i++){
+            key[i] = tolower(key[i]);
+        }
 
         struct Node *search_result = search(root, key);
         struct Node* p = NULL, *q = NULL;
