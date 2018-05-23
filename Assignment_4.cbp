@@ -31,6 +31,10 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
+		<Unit filename="Tree.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Tree.h" />
 		<Unit filename="main.c">
 			<Option compilerVar="CC" />
 		</Unit>

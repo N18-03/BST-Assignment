@@ -1,12 +1,13 @@
 # depslib dependency file v1.0
-1526909520 source:d:\c and c++\assignment_4\main.c
+1527094365 source:d:\c and c++\assignment_4\main.c
+	"Tree.h"
 	<stdio.h>
 	<stdlib.h>
-	"Tree.h"
+	<string.h>
 
-1526908407 d:\c and c++\assignment_4\tree.h
+1527092925 d:\c and c++\assignment_4\tree.h
 
-1526909604 source:d:\c and c++\assignment_4\tree.c
+1527094229 source:d:\c and c++\assignment_4\tree.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
