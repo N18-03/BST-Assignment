@@ -13,15 +13,16 @@
 	<string.h>
 	"Tree.h"
 
-1527007156 source:c:\users\l masreya\documents\github\bst-assignment\tree.c
+1527182755 source:c:\users\l masreya\documents\github\bst-assignment\tree.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
 	"Tree.h"
 
-1527007156 c:\users\l masreya\documents\github\bst-assignment\tree.h
+1527182474 c:\users\l masreya\documents\github\bst-assignment\tree.h
 
-1527056019 source:c:\users\l masreya\documents\github\bst-assignment\main.c
+1527182695 source:c:\users\l masreya\documents\github\bst-assignment\main.c
+	"Tree.h"
 	<stdio.h>
 	<stdlib.h>
 	<string.h>

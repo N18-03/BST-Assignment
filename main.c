@@ -7,20 +7,25 @@ int main()
 {
     Tree_node *root = NULL;
     root = loadDictionary("English Dictionary.txt", root);
-    printf("Height of the tree is = %d\n\n", get_height(root));
-    printf("\n\n enter A sentence : ");
-        while(1){
+    printf("Height of the tree is = %d", get_height(root));
+    printf("\n\nenter A sentence : ");
+    while(1){
         char sentence[20];
         char whitespace[2] =" ";
         scanf("%s",sentence);
-        char* word = strtok(sentence, whitespace);
+        check_word(sentence, root);
+
+        if(getchar() == '\n')
+            printf("\n*******************\n");
+
+        /*char* word = strtok(sentence, whitespace);
         while(word != NULL){
             check_word(word, root);
-            printf("\n*******************");
+            printf("\n*******************\n");
             word = strtok(NULL, whitespace);
             if(word == NULL) break;
-        }
-        }
+        }*/
+    }
 
     return 0;
 }

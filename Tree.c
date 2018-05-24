@@ -183,11 +183,11 @@ void check_word(char* word, Tree_node* Root)
 
     if(!strcmp(word, search_result->key))
     {
-        printf("\n The word \"%s\" exists in the English dictionary.",word);
+        printf("\nThe word \"%s\" exists in the English dictionary.\n",word);
     }
     else
     {
-        printf("\nThe word \"%s\" is not in the dictionary.Did you mean ?\n ",word);
+        printf("\nThe word \"%s\" is not in the dictionary. Did you mean?\n",word);
         printf("\n1.%s \n", search_result->key);
         if(search_result->key != NULL && strcmp(word, search_result->key) != 0)
         {
